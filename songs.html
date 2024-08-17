@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display:flex;
+        text-align:center;
+        justify-items: center;
+       background-image:url(https://media.istockphoto.com/id/1324561072/photo/party-people-enjoy-concert-at-festival-summer-music-festival.jpg?s=2048x2048&w=is&k=20&c=ArzFWKS_c1GEDpXjmEbOkPW-l-jCtXOy7V5l_1WYxuI=);
+       background-size:150vw 100vh;
+    }
+
+      .container {
+        margin-left:250px;
+        display: flex;
+        align-items:center;
+         justify-content:space-evenly; 
+        gap:3px;
+        height: 350px;
+        width: 400px;
+        border: 5px solid rgb(54, 61, 121);
+        box-shadow:1px 1px 10px rgb(209, 240, 12);
+        border-radius:20px;
+        
+    }
+
+    .item {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(to top, rgb(49, 117, 181), rgb(241, 99, 236));
+    height: 100px;
+    width: 10px;
+    border-radius:20px;
+     position: relative;
+     left:130px ;
+    /* align-items: self-end;  */
+    }
+.item:nth-child(1) {
+    animation-delay: 0s;
+}
+.item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.item:nth-child(3){
+    animation-delay: 0.2s;
+}
+.item:nth-child(4) {
+    animation-delay: 0.75s;
+}
+.item:nth-child(5){
+    animation-delay: 0.3s;
+}
+.item:nth-child(6){
+    animation-delay: 0.1s;
+}
+.item:nth-child(7){
+    animation-delay: 0.4s;
+}
+.item:nth-child(8){
+    animation-delay: 0.35s;
+}
+@keyframes move{
+    0%{
+        height: 10%;
+    }
+
+    25%{
+        height: 75%;
+    }
+
+    50%{
+        height:50%;
+    }
+
+    75%{
+        height: 80%;
+    }
+
+    100%{
+        height: 10%;
+    }
+
+}
+.song{
+    position: relative;
+    top:150px;
+}
+
+</style>
+<body>
+    <div class="container">
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div><br><br><br>
+<div class="song">
+    <audio controls autoplay>
+    <source src="../animations/Tillu Anna DJ Pedithe.mp3">
+    </audio>
+   </div>
+   </div>
+    
+</body>
+</html>
